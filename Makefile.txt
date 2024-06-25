@@ -1,0 +1,14 @@
+# write a makefile to compile all files using step by step compiling 
+# principle
+# add a run label to makefile to run your program with make and the run label
+# add a clean label to clean all object and executable files
+# you will run makefile from Zylab console 
+
+main : QueryApp.cpp QueryFunctions.cpp QueryFunctions.h
+	g++ QueryApp.cpp QueryFunctions.cpp QueryFunctions.h -o main
+
+runapp :
+	./main
+
+clean : 
+	rm main
